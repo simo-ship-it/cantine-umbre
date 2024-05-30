@@ -1,19 +1,25 @@
 {
   "name": "cantine-umbre",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev:backend": "node backend/server.js"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "isomorphic-unfetch": "^4.0.2",
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
+    "@types/sqlite3": "^3.1.11",
     "eslint": "^8",
     "eslint-config-next": "14.2.3"
   }
